@@ -2,5 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-titulo = st.title("TITULO DO SITE")
-titulo
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
+)
+st.header("SITE EM DESENVOLVIMENTO")
